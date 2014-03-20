@@ -1022,9 +1022,9 @@ function(declare, lang, array, Deferred, dom, on, query, i18n, domStyle, number,
                 }
             });
             //only use geocoders with a singleLineFieldName that allow placefinding
-            geocoders = array.filter(geocoders, function(geocoder) {
-                return (esriLang.isDefined(geocoder.singleLineFieldName) && esriLang.isDefined(geocoder.placefinding) && geocoder.placefinding);
-            });
+            // geocoders = array.filter(geocoders, function(geocoder) {
+            //     return (esriLang.isDefined(geocoder.singleLineFieldName) && esriLang.isDefined(geocoder.placefinding) && geocoder.placefinding);
+            // });
             var esriIdx;
             if (hasEsri) {
                 for (var i = 0; i < geocoders.length; i++) {

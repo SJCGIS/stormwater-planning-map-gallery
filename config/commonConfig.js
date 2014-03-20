@@ -5,13 +5,15 @@ function() {
     bingMapsKey:"ArAavTvIHoG3w9HwhroJuCFAzUttY_pQQvjdmHmZHQQfv6wahgxcyOiT3op-SCni",   
     helperServices: {
        geometry:{
-        url: location.protocol + "//utility.arcgisonline.com/ArcGIS/rest/services/Geometry/GeometryServer"
+        url: location.protocol + "//sjcgis.org/arcgis/rest/services/Utilities/Geometry/GeometryServer"
        },
        printTask: {
-        url: location.protocol + "//utility.arcgisonline.com/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task"
+        url: location.protocol + "//sjcgis.org/arcgis/rest/services/Tools/ExportWebMapAGO/GPServer/Export%20Web%20Map"
        },
        geocode: [{
-        url: location.protocol + "//geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+           url: location.protocol + "//sjcgis.org/arcgis/rest/services/Tools/Polaris_Geolocator/GeocodeServer",
+	   name: "SJC Geocoder",
+	   singleLineFieldName: "SingleLine"	   
        }]
     }
 };
